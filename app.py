@@ -28,7 +28,7 @@ if uploaded_file is not None:
     if st.button("🚀 確認上傳並送出給會計"):
         with st.spinner("AI 正在幫您看發票中，請稍候..."):
             try:
-                model = genai.GenerativeModel('gemini-1.5-flash-latest')
+               model = genai.GenerativeModel('gemini-1.5-pro')
                 img = PIL.Image.open(uploaded_file)
                 
                 prompt = """
